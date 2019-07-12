@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=com.ruc.thirdparty -DartifactId=cloud-java-sdk -Dpackaging=jar -Dversion=1.0.12 -Dfile=cloud-java-sdk-1.0.12.jar -DgeneratePom=true
