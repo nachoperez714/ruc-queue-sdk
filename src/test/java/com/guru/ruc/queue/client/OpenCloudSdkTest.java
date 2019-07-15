@@ -1,35 +1,22 @@
 package com.guru.ruc.queue.client;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.guru.ruc.queue.services.impl.OpenCloudService;
+import com.guru.ruc.queue.domain.RucQueue;
 
 public class OpenCloudSdkTest extends AbstractSpringTest {
 
-//	private OpenCloudService openCloudService;
-	
-	@BeforeEach
-	void init() {
-//		openCloudService = new OpenCloudService();
-	       
-//	    Mockito.lenient().when(messageMapper.).thenReturn(10);
-	         
-//	    when(settingRepository.getUserNameMinLength()).thenReturn(4);
-	         
-//	    Mockito.lenient().when(userRepository.isUsernameAlreadyExists(any(String.class))).thenReturn(false);
-	}
-
-
 	@Test
 	public void testCreatedQueue() {
-//		Assertions.assertEquals(2, openCloudService.listQueues().size());
+		Assertions.assertEquals(2, getOpenCloudService().listQueues().size());
 	}
 
-//	@Test
-//	public void testQueue() {
-//		Assertions.assertEquals(queDto.getId(), openCloudService.retrieveQueue("ruc-input-1"));
-//	}
+	@Test
+	public void testQueue() {
+		RucQueue rqueue = getOpenCloudService().retrieveQueue("8c6245ad-9639-4fe8-83df-39327edf823d");
+		Assertions.assertNotNull(rqueue);
+		Assertions.assertEquals("ruc-input-1", rqueue.getName());
+	}
 
 }
