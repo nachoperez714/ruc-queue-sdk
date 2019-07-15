@@ -43,7 +43,7 @@ public class OpenCloudService implements QClientService {
 	private final MessageWithHandlerMapper messageWithHandlerMapper = MessageWithHandlerMapper.INSTANCE;
 	private final ConsumerGroupMapper consumerGroupMapper = ConsumerGroupMapper.INSTANCE;
 	private final ConsumeConfirmMapper consumeConfirmMapper = ConsumeConfirmMapper.INSTANCE;
-	private final ActionResponseMapper actionResponseMapper = ActionResponseMapper.INSTANCE;	
+	private final ActionResponseMapper actionResponseMapper = ActionResponseMapper.getMapper();	
 
 	@Override
 	public RucQueue retrieveQueue(String queueId) {

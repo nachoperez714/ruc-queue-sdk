@@ -6,7 +6,10 @@
 
 
 	<!-- openCloudService -->
-	<bean id="openCloudService" class="com.guru.ruc.queue.services.impl.OpenCloudService" />
+<!-- 	<bean id="messageMapper" class="com.guru.ruc.queue.mapper.opencloud.MessageMapper" /> -->
+
+	
+<!-- 	<bean id="openCloudService" class="com.guru.ruc.queue.services.impl.OpenCloudService" /> -->
 
 
 </beans>
