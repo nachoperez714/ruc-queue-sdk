@@ -28,7 +28,7 @@
 
 **ID:** g-68a542da-d6dd-473c-8c07-70c5e581d3f
 
-**NAME** advertisement-edithor-adapters
+**NAME:** advertisement-edithor-adapters
 		
 ### (2)
 
