@@ -11,19 +11,18 @@ import com.guru.ruc.queue.domain.RucQueue;
 import com.guru.ruc.queue.domain.RucQueueMessageWithHandler;
 
 public interface QClientService {
-	
-	
-	public RucQueue retrieveQueue(String queueId);
-	
-	public List<RucQueue> listQueues();
-	
-//	public List<Quota> getQuota();
-		
-	public RucQueueMessageWithHandler consumeMessage(String queueId, String queueGroupId);
-	
-	public List<RucQueueMessageWithHandler> consumeMessages(String queueId, String queueGroupId, int numMessages);
 
-	public List<RucConsumerGroup> getGroups(String queueId);
+	RucQueue getQueue(String queueId);
+
+	List<RucQueue> listQueues();
+
+//	public List<Quota> getQuota();
+
+	RucQueueMessageWithHandler consumeMessage(String queueId, String queueGroupId);
+
+	List<RucQueueMessageWithHandler> consumeMessages(String queueId, String queueGroupId, int numMessages);
+
+	List<RucConsumerGroup> getConsumersGroup(String queueId);
 
 	RucActionResponse sendMessages(List<RucMessage> messages, String queueId);
 
@@ -31,6 +30,5 @@ public interface QClientService {
 
 	RucConsumeConfirmResponse acknowledgeMessages(List<RucConsumeConfirm> consumeConfirm, String queueGroupId,
 			String queueId);
-
 
 }

@@ -36,6 +36,8 @@ public class ApplicationProperties extends PropertiesConfiguration {
 		}
 		return instance;
 	}
+	
+	
 
 	private static ApplicationProperties newConfig(String fileName) throws ConfigException {
 		try {
@@ -66,13 +68,15 @@ public class ApplicationProperties extends PropertiesConfiguration {
 
 	private OpenCloud getOpenCloudConfig() {
 		return OpenCloud.builder()
-				.ak(getString("credentials.dms.ak"))
-				.sk(getString("credentials.dms.sk"))
-				.projectId(getString("credentials.dms.project-id"))
-				.region(getString("credentials.dms.region"))
-				.domain(getString("credentials.dms.domain"))
+				.ak(getString("opencloud.credentials.ak"))
+				.sk(getString("opencloud.credentials.sk"))
+				.projectId(getString("opencloud.credentials.project-id"))
+				.region(getString("opencloud.credentials.region"))
+				.domain(getString("opencloud.credentials.domain"))
 				.build();
 	}
+
+
 
 	public OpenCloud getOpenCloud() {
 		return openCloud;

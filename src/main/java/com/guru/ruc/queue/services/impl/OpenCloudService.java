@@ -46,7 +46,7 @@ public class OpenCloudService implements QClientService {
 	private final ActionResponseMapper actionResponseMapper = ActionResponseMapper.getMapper();	
 
 	@Override
-	public RucQueue retrieveQueue(String queueId) {
+	public RucQueue getQueue(String queueId) {
 		Queue queue = client.messageQueue().queue().get(queueId);
 		return queueMapper.toDomain(queue);
 	}
@@ -91,7 +91,7 @@ public class OpenCloudService implements QClientService {
 	}
 
 	@Override
-	public List<RucConsumerGroup> getGroups(String queueId) {
+	public List<RucConsumerGroup> getConsumersGroup(String queueId) {
 		return consumerGroupMapper.toDomain(client.messageQueue().consumerGroups().list(queueId));
 	}
 

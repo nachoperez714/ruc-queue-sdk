@@ -8,19 +8,16 @@ import com.guru.ruc.queue.services.impl.OpenCloudService;
 
 @ExtendWith(MockitoExtension.class)
 public class AbstractSpringTest {
-	
+
 	private OpenCloudService openCloudService;
-	
+
 	@BeforeEach
 	void setUp() {
-		setOpenCloudService(new OpenCloudService());
+		this.openCloudService = new OpenCloudService();
 	}
 
 	public OpenCloudService getOpenCloudService() {
 		return openCloudService;
 	}
 
-	public void setOpenCloudService(OpenCloudService openCloudService) {
-		this.openCloudService = openCloudService;
-	}
 }
