@@ -3,7 +3,7 @@
 
 # Intalacion de la libreria
 
-###Agregar al proyecto:
+### Agregar al proyecto:
 
 	<parent>
 		<groupId>com.yell</groupId>
@@ -15,11 +15,11 @@
 
 	http://subversion.aws.yellargentina.com/svn/amarillas/SCM/ParentPOM/trun/root/pom.xml
 
-### ejecutar: 
+### Ejecutar: 
 
 	mvn clean install
 	
-### agregar la dependencia:
+### Agregar la dependencia:
 	
 	<dependency>
 		<groupId>com.guru.ruc.queue</groupId>
