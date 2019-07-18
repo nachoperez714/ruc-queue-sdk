@@ -229,9 +229,13 @@
 	</reporting>
 
 	<distributionManagement>
+		<repository>			
+			<id>nexus-releases</id>
+			<url>http://artifactory.yellargentina.com/repository/ingenieria-guru-maven-releases/</url>
+		</repository>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
-			<url>http://artifactory.yellargentina.com/repository/maven-snapshots</url>
+			<url>http://artifactory.yellargentina.com/repository/ingenieria-guru-maven/</url>
 		</snapshotRepository>
 	</distributionManagement>
 

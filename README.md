@@ -1,5 +1,11 @@
 # ruc-queue-sdk
 
+
+#MAVEN
+	<groupId>com.guru.ruc.queue</groupId>
+	<artifactId>queue-service-sdk</artifactId>
+	<version>2.0</version>
+
 ## Info queue
 
 ### INPUT
@@ -41,3 +47,4 @@
 **ID:** g-68a542da-d6dd-473c-8c07-70c5e581d3f
 
 **NAME:** advertisement-csapi-adapters 
+
