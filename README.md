@@ -26,6 +26,19 @@
 		<artifactId>queue-service-sdk</artifactId>
 		<version>2.0</version>
 	</dependency>
+	
+# Uso 
+
+    @Bean("openCloudService")
+    public QClientService openCloudService() {
+        return new OpenCloudService();
+    }
+	
+# 	Llamar en el servicio
+	
+	@Service
+	@Qualifier("openCloudService")
+	private QClientService openCloudService;
 
 ## Info queue
 
