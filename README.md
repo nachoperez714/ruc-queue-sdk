@@ -2,9 +2,11 @@
 
 
 # MAVEN
-	<groupId>com.guru.ruc.queue</groupId>
-	<artifactId>queue-service-sdk</artifactId>
-	<version>2.0</version>
+	<dependency>
+		<groupId>com.guru.ruc.queue</groupId>
+		<artifactId>queue-service-sdk</artifactId>
+		<version>2.0</version>
+	</dependency>
 
 ## Info queue
 
