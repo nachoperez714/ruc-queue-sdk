@@ -14,13 +14,13 @@
 	
 **NAME:** g-69ef276e-a86a-47ae-bc98-ae9c7162dd2d
 
-**ID:**  advertisement-orquestators
+**ID:** advertisement-orquestators
 
 ### OUTPUT
 
 **NAME:** ruc-output-1
 
-**ID:**ab5ee216-2394-451b-a051-501aeb3f4d2c
+**ID:** ab5ee216-2394-451b-a051-501aeb3f4d2c
 
 #### ==== consumers output queue =====
 
@@ -28,7 +28,7 @@
 
 **ID:** g-68a542da-d6dd-473c-8c07-70c5e581d3f
 
-**NAME** advertisement-edithor-adapters
+**NAME:** advertisement-edithor-adapters
 		
 ### (2)
 
