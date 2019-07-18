@@ -1,7 +1,26 @@
 # ruc-queue-sdk
 
 
-# MAVEN
+# Intalacion de la libreria
+
+###Agregar al proyecto:
+
+	<parent>
+		<groupId>com.yell</groupId>
+		<artifactId>root</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+### Para instalarlo localmente bajar: 
+
+	http://subversion.aws.yellargentina.com/svn/amarillas/SCM/ParentPOM/trun/root/pom.xml
+
+### ejecutar: 
+
+	mvn clean install
+	
+### agregar la dependencia:
+	
 	<dependency>
 		<groupId>com.guru.ruc.queue</groupId>
 		<artifactId>queue-service-sdk</artifactId>
