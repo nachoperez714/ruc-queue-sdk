@@ -13,7 +13,7 @@
 	
 ### Para instalarlo localmente bajar: 
 
-	http://subversion.aws.yellargentina.com/svn/amarillas/SCM/ParentPOM/trun/root/pom.xml
+	http://subversion.aws.yellargentina.com/svn/amarillas/SCM/ParentPOM/trunk/root/pom.xml
 
 ### Ejecutar: 
 
